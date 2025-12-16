@@ -8,3 +8,11 @@ body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
 }
+
+@plugin "daisyui/theme" {
+  name: "mytheme";
+  default: true;
+  --color-primary: #8B4ACC;
+}
+
+
