@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Section = ({ children, style, customWidth="container" }) => {
+const Section = ({ children, style, customWidth="container", customPadding="mx-auto px-5" }) => {
   return (
     <section
-      className={`${customWidth} mx-auto px-5 md:px-10 ${
+      className={`${customWidth} ${customPadding} md:px-10 ${
         style && style
       }`}
     >

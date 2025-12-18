@@ -23,3 +23,9 @@ body {
 .custom_font_color {
   color: #a69daf; 
 }
+
+.gradient_font {
+  color: transparent;
+  background-image : linear-gradient(to right, #7B53E8, #5831C3);
+  background-clip: text;
+}

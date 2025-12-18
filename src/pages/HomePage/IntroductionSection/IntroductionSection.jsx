@@ -4,11 +4,12 @@ import AnimatedImage from '../../../components/AnimatedImage/AnimatedImage';
 import animation from '../../../assets/animations/Office-boy-Multitasking.json'
 import Button from '../../../components/Button';
 import Title from '../../../components/Title/Title';
-import Description from '../../../components/description/description';
+import Description from '../../../components/Description/Description';
+
 
 const IntroductionSection = () => {
   const [ isReadMore, setReadMore ] = useState(false);
-  console.log(isReadMore)
+ 
     return (
       <Section style={"h-auto lg:min-h-screen flex items-center"}>
         <div className="flex flex-col lg:flex-row items-center  py-20 lg:gap-10">
