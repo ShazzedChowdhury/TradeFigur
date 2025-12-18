@@ -1,0 +1,24 @@
+[
+  {
+    "id": "mahinChowdhury",
+    "role": "The Mastermind",
+    "name": "Mahin Chowdhury",
+    "skills": [
+      "Strategic Business Intelligence Expert",
+      "The Market Research & SEO Authority",
+      "Search & Strategy Mastermind",
+      "Data-Driven Business Architect"
+    ]
+  },
+  {
+    "id": "sultanMahmud",
+    "role": "The Storyteller",
+    "name": "Sultan Mahmud",
+    "skills": [
+      "SEO Content Strategist & Brand Builder",
+      "The SEO Storyteller",
+      "Content & Search Engineer",
+      "Technical SEO & Brand Narrative Expert"
+    ]
+  }
+]
