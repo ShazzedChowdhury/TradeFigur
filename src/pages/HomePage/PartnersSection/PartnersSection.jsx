@@ -1,21 +1,38 @@
 import React from "react";
-import BrandLogo from "../../../components/BrandLogo/BrandLogo";
 import Section from "../../../components/Section";
 import google from "../../../assets/partners-logo/google.png";
+import shopify from "../../../assets/partners-logo/shopify.png";
 import meta from "../../../assets/partners-logo/meta.png";
 import linkedin from "../../../assets/partners-logo/linkedin.png";
-import shopify from "../../../assets/partners-logo/shopify.png";
+import Divider from "../../../components/Divider/Divider";
 
 const PartnersSection = () => {
-    const partners = [
-      { img: google, name: "Google" },
-      { img: meta, name: "Meta" },
-      { img: shopify, name: "Shopify" },
-      { img: linkedin, name: "LinedIn" },
-    ];
+  const partners = [
+    { logo: meta, name: "meta" },
+    { logo: google, name: "google" },
+    { logo: shopify, name: "shopify" },
+    { logo: linkedin, name: "linkedin" },
+  ];
   return (
-    <Section customPadding="px-0 md:px-0" customWidth="max-w-5xl w-full mx-auto">
-      <BrandLogo data={partners} />
+    <Section
+      style="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-3 border border-l-0 border-r-0 border-gray-800"
+      customPadding="px-0 md:px-0"
+      customWidth="w-full mx-auto container"
+    >
+      {partners.map((partner, idx) => {
+        return (
+          <div
+            key={idx}
+            className="max-w-80 grayscale hover:grayscale-0 transition-[filter] duration-1000 max-h-30 w-full h-full flex items-center"
+          >
+            <img
+              src={partner?.logo}
+              alt={partner?.name}
+              className="object-cover w-full h-full"
+            />
+          </div>
+        );
+      })}
     </Section>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
 
-const BrandLogo = ({data, style, childStyle, gradient=true, isName=false, isBorder}) => {
+const BrandLogo = ({data, style, childStyle, gradient=true, isBorder}) => {
 
     return (
       <div className={`overflow-hidden ${style || ""}`}>
@@ -19,11 +19,6 @@ const BrandLogo = ({data, style, childStyle, gradient=true, isName=false, isBord
                   src={singleData?.img}
                   alt={singleData?.name}
                 />
-                {isName && (
-                  <h5 className="text-white font-semibold">
-                    {singleData?.name}
-                  </h5>
-                )}
               </div>
             );
           })}

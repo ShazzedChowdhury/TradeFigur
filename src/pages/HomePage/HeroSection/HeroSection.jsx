@@ -4,7 +4,7 @@ import BannerAnimation from './BannerAnimation/BannerAnimation';
 
 const HeroSection = () => {
     return (
-      <section className="h-full lg:min-h-[calc(100vh-95px)] flex items-center  ">
+      <section className="h-full xl:min-h-[calc(100vh-95px)] flex items-center  ">
         <div className="container mx-auto px-5 md:px-10 flex items-center flex-col-reverse lg:flex-row py-20">
           {/* content */}
           <div className="w-full lg:w-2/3 h-full space-y-7 md:text-center lg:text-left">
