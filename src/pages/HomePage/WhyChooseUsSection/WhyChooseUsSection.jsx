@@ -9,7 +9,7 @@ import SingleData from "./SingleData/SingleData";
 const fetchData = fetch('/why-choose-us.json').then(res => res.json())
 const WhyChooseUsSection = () => {
     const data = use(fetchData)
-    console.log(data)
+
     return (
       <Section
         id="why-us"

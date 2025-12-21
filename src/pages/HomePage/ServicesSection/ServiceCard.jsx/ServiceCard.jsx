@@ -16,7 +16,6 @@ const ServiceCard = ({ service, Icon }) => {
         }
 
     }, [isClicked])
-    console.log(isClicked)
 
 
   return (
