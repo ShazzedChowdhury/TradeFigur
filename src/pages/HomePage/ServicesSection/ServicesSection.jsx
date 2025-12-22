@@ -57,15 +57,12 @@ const ServicesSection = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
-  if (!services) {
-    return <p>Loading......</p>;
-  }
 
   return (
     <Section id="services" customStyle={"py-20"}>
       <Title
         content={"Digital Marketing"}
-        gradientContent={"Services at TradeFigur"}
+        gradientContent={"Services at Netolyze"}
         customStyle={"text-3xl md:text-5xl text-center mb-5"}
       />
       <Description

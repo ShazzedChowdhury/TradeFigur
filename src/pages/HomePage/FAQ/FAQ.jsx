@@ -26,6 +26,7 @@ const FAQ = () => {
             {data.map((singleData, idx) => {
               return (
                 <div
+                  key={idx}
                   className={`bg-[#140b1e] mb-2 transition-[border] rounded-sm p-5 ease-in-out duration-1000 ${
                     opentIndex === idx && "border border-[#7b53e8]"
                   }`}
