@@ -8,20 +8,20 @@ const Netolyze = ({isFooter=false}) => {
       <Link to={"/"} className="flex relative">
         {/* <img src={logo} className='h-10' /> */}
         {isFooter ? (
-          <img src={footeLogo} className="w-10.5" alt="logo" />
+          <img src={footeLogo} className="w-12" alt="logo" />
         ) : (
-          <img src={logo} className="w-10" alt="logo" />
+          <img src={logo} className="w-11" alt="logo" />
         )}
 
-        <p className="text-white font-bold text-3xl flex absolute top-2 left-10.5">
-          <span className={`-mr-2 ${!isFooter && " bg-clip-text"}`}>et</span>
+        <p className="text-white font-bold text-2xl flex absolute top-3 left-12">
+          <span className={`-mr-2 ${!isFooter && " bg-clip-text"}`}>Net</span>
           <img
             src={magnifierLogo}
-            className="w-10 mt-1 -rotate-160"
+            className="w-10 -rotate-160"
             alt="magnifier image"
           />
           <span
-            className={`font-thin text-2xl -ml-2 mt-1 ${
+            className={`font-thin -ml-2 ${
               !isFooter && "bg-clip-text"
             }`}
           >
